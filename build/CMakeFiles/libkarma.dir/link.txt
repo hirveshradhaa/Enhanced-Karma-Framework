@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc liblibkarma.a CMakeFiles/libkarma.dir/src/karma_allocator.cpp.obj CMakeFiles/libkarma.dir/src/bheap.cpp.obj CMakeFiles/libkarma.dir/src/adaptive_credit_manager.cpp.obj
+C:\MinGW\bin\ranlib.exe liblibkarma.a

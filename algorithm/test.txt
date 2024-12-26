@@ -1,0 +1,1225 @@
+Test Case 1: Initial State
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:      0 blocks
+   user2:      0 blocks
+   user3:      0 blocks
+   user4:      0 blocks
+   user5:      0 blocks
+
+Allocations:
+   user1:      0 blocks
+   user2:      0 blocks
+   user3:      0 blocks
+   user4:      0 blocks
+   user5:      0 blocks
+
+Resource: Memory
+Demands:
+   user1:      0 blocks
+   user2:      0 blocks
+   user3:      0 blocks
+   user4:      0 blocks
+   user5:      0 blocks
+
+Allocations:
+   user1:      0 blocks
+   user2:      0 blocks
+   user3:      0 blocks
+   user4:      0 blocks
+   user5:      0 blocks
+
+Resource: Network
+Demands:
+   user1:      0 blocks
+   user2:      0 blocks
+   user3:      0 blocks
+   user4:      0 blocks
+   user5:      0 blocks
+
+Allocations:
+   user1:      0 blocks
+   user2:      0 blocks
+   user3:      0 blocks
+   user4:      0 blocks
+   user5:      0 blocks
+
+Resource: Storage
+Demands:
+   user1:      0 blocks
+   user2:      0 blocks
+   user3:      0 blocks
+   user4:      0 blocks
+   user5:      0 blocks
+
+Allocations:
+   user1:      0 blocks
+   user2:      0 blocks
+   user3:      0 blocks
+   user4:      0 blocks
+   user5:      0 blocks
+
+Credits:
+   user1:         2100
+   user2:         2100
+   user3:         2100
+   user4:         2100
+   user5:         2100
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 0 blocks
+Total Demanded: 0 blocks
+Resource Utilization: 0.00%
+Fairness Index: 1.000
+
+Resource: Memory
+Total Allocated: 0 blocks
+Total Demanded: 0 blocks
+Resource Utilization: 0.00%
+Fairness Index: 1.000
+
+Resource: Network
+Total Allocated: 0 blocks
+Total Demanded: 0 blocks
+Resource Utilization: 0.00%
+Fairness Index: 1.000
+
+Resource: Storage
+Total Allocated: 0 blocks
+Total Demanded: 0 blocks
+Resource Utilization: 0.00%
+Fairness Index: 1.000
+Credit Balance Index: 1.000
+Weighted Resource Utilization: 0.00%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Test Case 2: Equal Resource Demands
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    200 blocks
+   user2:    200 blocks
+   user3:    200 blocks
+   user4:    200 blocks
+   user5:    200 blocks
+
+Allocations:
+   user1:    191 blocks
+   user2:    186 blocks
+   user3:    181 blocks
+   user4:    177 blocks
+   user5:    198 blocks
+
+Resource: Memory
+Demands:
+   user1:    800 blocks
+   user2:    800 blocks
+   user3:    800 blocks
+   user4:    800 blocks
+   user5:    800 blocks
+
+Allocations:
+   user1:    783 blocks
+   user2:    771 blocks
+   user3:    762 blocks
+   user4:    753 blocks
+   user5:    798 blocks
+
+Resource: Network
+Demands:
+   user1:    400 blocks
+   user2:    400 blocks
+   user3:    400 blocks
+   user4:    400 blocks
+   user5:    400 blocks
+
+Allocations:
+   user1:    387 blocks
+   user2:    378 blocks
+   user3:    371 blocks
+   user4:    365 blocks
+   user5:    399 blocks
+
+Resource: Storage
+Demands:
+   user1:   1600 blocks
+   user2:   1600 blocks
+   user3:   1600 blocks
+   user4:   1600 blocks
+   user5:   1600 blocks
+
+Allocations:
+   user1:   1584 blocks
+   user2:   1571 blocks
+   user3:   1561 blocks
+   user4:   1552 blocks
+   user5:   1600 blocks
+
+Credits:
+   user1:         1995
+   user2:         2034
+   user3:         2065
+   user4:         2093
+   user5:         1945
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 933 blocks
+Total Demanded: 1000 blocks
+Resource Utilization: 93.30%
+Fairness Index: 0.998
+
+Resource: Memory
+Total Allocated: 3867 blocks
+Total Demanded: 4000 blocks
+Resource Utilization: 96.67%
+Fairness Index: 1.000
+
+Resource: Network
+Total Allocated: 1900 blocks
+Total Demanded: 2000 blocks
+Resource Utilization: 95.00%
+Fairness Index: 0.999
+
+Resource: Storage
+Total Allocated: 7868 blocks
+Total Demanded: 8000 blocks
+Resource Utilization: 98.35%
+Fairness Index: 1.000
+Credit Balance Index: 0.999
+Weighted Resource Utilization: 97.12%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Test Case 3: CPU-Intensive Workload
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    800 blocks
+   user2:    600 blocks
+   user3:    400 blocks
+   user4:    200 blocks
+   user5:    200 blocks
+
+Allocations:
+   user1:    193 blocks
+   user2:    187 blocks
+   user3:    182 blocks
+   user4:    176 blocks
+   user5:    195 blocks
+
+Resource: Memory
+Demands:
+   user1:    400 blocks
+   user2:    400 blocks
+   user3:    400 blocks
+   user4:    800 blocks
+   user5:    800 blocks
+
+Allocations:
+   user1:    400 blocks
+   user2:    400 blocks
+   user3:    400 blocks
+   user4:    800 blocks
+   user5:    800 blocks
+
+Resource: Network
+Demands:
+   user1:    200 blocks
+   user2:    200 blocks
+   user3:    200 blocks
+   user4:    400 blocks
+   user5:    400 blocks
+
+Allocations:
+   user1:    200 blocks
+   user2:    200 blocks
+   user3:    200 blocks
+   user4:    400 blocks
+   user5:    400 blocks
+
+Resource: Storage
+Demands:
+   user1:    800 blocks
+   user2:    800 blocks
+   user3:    800 blocks
+   user4:   1600 blocks
+   user5:   1600 blocks
+
+Allocations:
+   user1:    800 blocks
+   user2:    800 blocks
+   user3:    800 blocks
+   user4:   1600 blocks
+   user5:   1600 blocks
+
+Credits:
+   user1:         2051
+   user2:         2098
+   user3:         2135
+   user4:         1951
+   user5:         1776
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 933 blocks
+Total Demanded: 2200 blocks
+Resource Utilization: 93.30%
+Fairness Index: 0.999
+
+Resource: Memory
+Total Allocated: 2800 blocks
+Total Demanded: 2800 blocks
+Resource Utilization: 70.00%
+Fairness Index: 0.891
+
+Resource: Network
+Total Allocated: 1400 blocks
+Total Demanded: 1400 blocks
+Resource Utilization: 70.00%
+Fairness Index: 0.891
+
+Resource: Storage
+Total Allocated: 5600 blocks
+Total Demanded: 5600 blocks
+Resource Utilization: 70.00%
+Fairness Index: 0.891
+Credit Balance Index: 0.996
+Weighted Resource Utilization: 71.55%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Test Case 4: Memory-Intensive Workload
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    800 blocks
+   user2:    600 blocks
+   user3:    400 blocks
+   user4:    200 blocks
+   user5:    200 blocks
+
+Allocations:
+   user1:    195 blocks
+   user2:    188 blocks
+   user3:    183 blocks
+   user4:    175 blocks
+   user5:    192 blocks
+
+Resource: Memory
+Demands:
+   user1:   3000 blocks
+   user2:   2500 blocks
+   user3:   2000 blocks
+   user4:    800 blocks
+   user5:    800 blocks
+
+Allocations:
+   user1:    790 blocks
+   user2:    777 blocks
+   user3:    765 blocks
+   user4:    750 blocks
+   user5:    786 blocks
+
+Resource: Network
+Demands:
+   user1:    200 blocks
+   user2:    200 blocks
+   user3:    200 blocks
+   user4:    400 blocks
+   user5:    400 blocks
+
+Allocations:
+   user1:    200 blocks
+   user2:    200 blocks
+   user3:    200 blocks
+   user4:    400 blocks
+   user5:    400 blocks
+
+Resource: Storage
+Demands:
+   user1:    800 blocks
+   user2:    800 blocks
+   user3:    800 blocks
+   user4:   1600 blocks
+   user5:   1600 blocks
+
+Allocations:
+   user1:    800 blocks
+   user2:    800 blocks
+   user3:    800 blocks
+   user4:   1600 blocks
+   user5:   1600 blocks
+
+Credits:
+   user1:         2040
+   user2:         2108
+   user3:         2163
+   user4:         1852
+   user5:         1621
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 933 blocks
+Total Demanded: 2200 blocks
+Resource Utilization: 93.30%
+Fairness Index: 0.999
+
+Resource: Memory
+Total Allocated: 3868 blocks
+Total Demanded: 9100 blocks
+Resource Utilization: 96.70%
+Fairness Index: 1.000
+
+Resource: Network
+Total Allocated: 1400 blocks
+Total Demanded: 1400 blocks
+Resource Utilization: 70.00%
+Fairness Index: 0.891
+
+Resource: Storage
+Total Allocated: 5600 blocks
+Total Demanded: 5600 blocks
+Resource Utilization: 70.00%
+Fairness Index: 0.891
+Credit Balance Index: 0.990
+Weighted Resource Utilization: 78.67%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Test Case 5: Network and Storage Burst
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    800 blocks
+   user2:    600 blocks
+   user3:    400 blocks
+   user4:    200 blocks
+   user5:    200 blocks
+
+Allocations:
+   user1:    222 blocks
+   user2:    205 blocks
+   user3:    192 blocks
+   user4:    160 blocks
+   user5:    160 blocks
+
+Resource: Memory
+Demands:
+   user1:   3000 blocks
+   user2:   2500 blocks
+   user3:   2000 blocks
+   user4:    800 blocks
+   user5:    800 blocks
+
+Allocations:
+   user1:    848 blocks
+   user2:    810 blocks
+   user3:    781 blocks
+   user4:    720 blocks
+   user5:    720 blocks
+
+Resource: Network
+Demands:
+   user1:    200 blocks
+   user2:    200 blocks
+   user3:    200 blocks
+   user4:   1500 blocks
+   user5:   1200 blocks
+
+Allocations:
+   user1:    200 blocks
+   user2:    200 blocks
+   user3:    200 blocks
+   user4:    760 blocks
+   user5:    887 blocks
+
+Resource: Storage
+Demands:
+   user1:    800 blocks
+   user2:    800 blocks
+   user3:    800 blocks
+   user4:   6000 blocks
+   user5:   5000 blocks
+
+Allocations:
+   user1:    800 blocks
+   user2:    800 blocks
+   user3:    800 blocks
+   user4:   2889 blocks
+   user5:   2879 blocks
+
+Credits:
+   user1:         1942
+   user2:         2066
+   user3:         2164
+   user4:          150
+   user5:          100
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 939 blocks
+Total Demanded: 2200 blocks
+Resource Utilization: 93.90%
+Fairness Index: 0.983
+
+Resource: Memory
+Total Allocated: 3879 blocks
+Total Demanded: 9100 blocks
+Resource Utilization: 96.97%
+Fairness Index: 0.996
+
+Resource: Network
+Total Allocated: 2247 blocks
+Total Demanded: 3300 blocks
+Resource Utilization: 112.35%
+Fairness Index: 0.680
+
+Resource: Storage
+Total Allocated: 8168 blocks
+Total Demanded: 13400 blocks
+Resource Utilization: 102.10%
+Fairness Index: 0.719
+Credit Balance Index: 0.647
+Weighted Resource Utilization: 101.55%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Test Case 6: Credit Depletion Test
+
+Iteration 1
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    900 blocks
+   user2:    900 blocks
+   user3:    900 blocks
+   user4:    900 blocks
+   user5:    900 blocks
+
+Allocations:
+   user1:    218 blocks
+   user2:    206 blocks
+   user3:    194 blocks
+   user4:    160 blocks
+   user5:    160 blocks
+
+Resource: Memory
+Demands:
+   user1:   3500 blocks
+   user2:   3500 blocks
+   user3:   3500 blocks
+   user4:   3500 blocks
+   user5:   3500 blocks
+
+Allocations:
+   user1:    839 blocks
+   user2:    812 blocks
+   user3:    787 blocks
+   user4:    721 blocks
+   user5:    720 blocks
+
+Resource: Network
+Demands:
+   user1:   1800 blocks
+   user2:   1800 blocks
+   user3:   1800 blocks
+   user4:   1800 blocks
+   user5:   1800 blocks
+
+Allocations:
+   user1:    431 blocks
+   user2:    409 blocks
+   user3:    389 blocks
+   user4:    341 blocks
+   user5:    340 blocks
+
+Resource: Storage
+Demands:
+   user1:   7000 blocks
+   user2:   7000 blocks
+   user3:   7000 blocks
+   user4:   7000 blocks
+   user5:   7000 blocks
+
+Allocations:
+   user1:   1644 blocks
+   user2:   1611 blocks
+   user3:   1584 blocks
+   user4:   1521 blocks
+   user5:   1520 blocks
+
+Credits:
+   user1:         1638
+   user2:         1859
+   user3:         2043
+   user4:          166
+   user5:          111
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 938 blocks
+Total Demanded: 4500 blocks
+Resource Utilization: 93.80%
+Fairness Index: 0.984
+
+Resource: Memory
+Total Allocated: 3879 blocks
+Total Demanded: 17500 blocks
+Resource Utilization: 96.97%
+Fairness Index: 0.996
+
+Resource: Network
+Total Allocated: 1910 blocks
+Total Demanded: 9000 blocks
+Resource Utilization: 95.50%
+Fairness Index: 0.991
+
+Resource: Storage
+Total Allocated: 7880 blocks
+Total Demanded: 35000 blocks
+Resource Utilization: 98.50%
+Fairness Index: 0.999
+Credit Balance Index: 0.654
+Weighted Resource Utilization: 97.38%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Iteration 2
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    900 blocks
+   user2:    900 blocks
+   user3:    900 blocks
+   user4:    900 blocks
+   user5:    900 blocks
+
+Allocations:
+   user1:    212 blocks
+   user2:    206 blocks
+   user3:    197 blocks
+   user4:    161 blocks
+   user5:    162 blocks
+
+Resource: Memory
+Demands:
+   user1:   3500 blocks
+   user2:   3500 blocks
+   user3:   3500 blocks
+   user4:   3500 blocks
+   user5:   3500 blocks
+
+Allocations:
+   user1:    827 blocks
+   user2:    812 blocks
+   user3:    791 blocks
+   user4:    723 blocks
+   user5:    725 blocks
+
+Resource: Network
+Demands:
+   user1:   1800 blocks
+   user2:   1800 blocks
+   user3:   1800 blocks
+   user4:   1800 blocks
+   user5:   1800 blocks
+
+Allocations:
+   user1:    421 blocks
+   user2:    409 blocks
+   user3:    392 blocks
+   user4:    342 blocks
+   user5:    344 blocks
+
+Resource: Storage
+Demands:
+   user1:   7000 blocks
+   user2:   7000 blocks
+   user3:   7000 blocks
+   user4:   7000 blocks
+   user5:   7000 blocks
+
+Allocations:
+   user1:   1631 blocks
+   user2:   1611 blocks
+   user3:   1588 blocks
+   user4:   1523 blocks
+   user5:   1525 blocks
+
+Credits:
+   user1:         1365
+   user2:         1644
+   user3:         1903
+   user4:          233
+   user5:          168
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 938 blocks
+Total Demanded: 4500 blocks
+Resource Utilization: 93.80%
+Fairness Index: 0.987
+
+Resource: Memory
+Total Allocated: 3878 blocks
+Total Demanded: 17500 blocks
+Resource Utilization: 96.95%
+Fairness Index: 0.997
+
+Resource: Network
+Total Allocated: 1908 blocks
+Total Demanded: 9000 blocks
+Resource Utilization: 95.40%
+Fairness Index: 0.993
+
+Resource: Storage
+Total Allocated: 7878 blocks
+Total Demanded: 35000 blocks
+Resource Utilization: 98.47%
+Fairness Index: 0.999
+Credit Balance Index: 0.683
+Weighted Resource Utilization: 97.35%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Iteration 3
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    900 blocks
+   user2:    900 blocks
+   user3:    900 blocks
+   user4:    900 blocks
+   user5:    900 blocks
+
+Allocations:
+   user1:    207 blocks
+   user2:    205 blocks
+   user3:    199 blocks
+   user4:    162 blocks
+   user5:    165 blocks
+
+Resource: Memory
+Demands:
+   user1:   3500 blocks
+   user2:   3500 blocks
+   user3:   3500 blocks
+   user4:   3500 blocks
+   user5:   3500 blocks
+
+Allocations:
+   user1:    816 blocks
+   user2:    811 blocks
+   user3:    795 blocks
+   user4:    725 blocks
+   user5:    730 blocks
+
+Resource: Network
+Demands:
+   user1:   1800 blocks
+   user2:   1800 blocks
+   user3:   1800 blocks
+   user4:   1800 blocks
+   user5:   1800 blocks
+
+Allocations:
+   user1:    413 blocks
+   user2:    408 blocks
+   user3:    395 blocks
+   user4:    344 blocks
+   user5:    348 blocks
+
+Resource: Storage
+Demands:
+   user1:   7000 blocks
+   user2:   7000 blocks
+   user3:   7000 blocks
+   user4:   7000 blocks
+   user5:   7000 blocks
+
+Allocations:
+   user1:   1620 blocks
+   user2:   1610 blocks
+   user3:   1592 blocks
+   user4:   1525 blocks
+   user5:   1531 blocks
+
+Credits:
+   user1:         1127
+   user2:         1432
+   user3:         1748
+   user4:          296
+   user5:          210
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 938 blocks
+Total Demanded: 4500 blocks
+Resource Utilization: 93.80%
+Fairness Index: 0.989
+
+Resource: Memory
+Total Allocated: 3877 blocks
+Total Demanded: 17500 blocks
+Resource Utilization: 96.92%
+Fairness Index: 0.997
+
+Resource: Network
+Total Allocated: 1908 blocks
+Total Demanded: 9000 blocks
+Resource Utilization: 95.40%
+Fairness Index: 0.994
+
+Resource: Storage
+Total Allocated: 7878 blocks
+Total Demanded: 35000 blocks
+Resource Utilization: 98.47%
+Fairness Index: 0.999
+Credit Balance Index: 0.712
+Weighted Resource Utilization: 97.34%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Test Case 7: Resource Release Test
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:     50 blocks
+   user2:     50 blocks
+   user3:     50 blocks
+   user4:     50 blocks
+   user5:     50 blocks
+
+Allocations:
+   user1:     50 blocks
+   user2:     50 blocks
+   user3:     50 blocks
+   user4:     50 blocks
+   user5:     50 blocks
+
+Resource: Memory
+Demands:
+   user1:    200 blocks
+   user2:    200 blocks
+   user3:    200 blocks
+   user4:    200 blocks
+   user5:    200 blocks
+
+Allocations:
+   user1:    200 blocks
+   user2:    200 blocks
+   user3:    200 blocks
+   user4:    200 blocks
+   user5:    200 blocks
+
+Resource: Network
+Demands:
+   user1:    100 blocks
+   user2:    100 blocks
+   user3:    100 blocks
+   user4:    100 blocks
+   user5:    100 blocks
+
+Allocations:
+   user1:    100 blocks
+   user2:    100 blocks
+   user3:    100 blocks
+   user4:    100 blocks
+   user5:    100 blocks
+
+Resource: Storage
+Demands:
+   user1:    400 blocks
+   user2:    400 blocks
+   user3:    400 blocks
+   user4:    400 blocks
+   user5:    400 blocks
+
+Allocations:
+   user1:    400 blocks
+   user2:    400 blocks
+   user3:    400 blocks
+   user4:    400 blocks
+   user5:    400 blocks
+
+Credits:
+   user1:         1205
+   user2:         1513
+   user3:         1832
+   user4:          377
+   user5:          287
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 250 blocks
+Total Demanded: 250 blocks
+Resource Utilization: 25.00%
+Fairness Index: 1.000
+
+Resource: Memory
+Total Allocated: 1000 blocks
+Total Demanded: 1000 blocks
+Resource Utilization: 25.00%
+Fairness Index: 1.000
+
+Resource: Network
+Total Allocated: 500 blocks
+Total Demanded: 500 blocks
+Resource Utilization: 25.00%
+Fairness Index: 1.000
+
+Resource: Storage
+Total Allocated: 2000 blocks
+Total Demanded: 2000 blocks
+Resource Utilization: 25.00%
+Fairness Index: 1.000
+Credit Balance Index: 0.743
+Weighted Resource Utilization: 25.00%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Test Case 8: Asymmetric Resource Demands
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    800 blocks
+   user2:     50 blocks
+   user3:     50 blocks
+   user4:    600 blocks
+   user5:     50 blocks
+
+Allocations:
+   user1:    690 blocks
+   user2:     50 blocks
+   user3:     50 blocks
+   user4:    160 blocks
+   user5:     50 blocks
+
+Resource: Memory
+Demands:
+   user1:    200 blocks
+   user2:   3000 blocks
+   user3:    200 blocks
+   user4:    200 blocks
+   user5:   2500 blocks
+
+Allocations:
+   user1:    200 blocks
+   user2:   2280 blocks
+   user3:    200 blocks
+   user4:    200 blocks
+   user5:   1404 blocks
+
+Resource: Network
+Demands:
+   user1:    100 blocks
+   user2:    300 blocks
+   user3:   1500 blocks
+   user4:    100 blocks
+   user5:   1200 blocks
+
+Allocations:
+   user1:    100 blocks
+   user2:    300 blocks
+   user3:    340 blocks
+   user4:    100 blocks
+   user5:    340 blocks
+
+Resource: Storage
+Demands:
+   user1:    400 blocks
+   user2:    400 blocks
+   user3:   6000 blocks
+   user4:   5000 blocks
+   user5:    400 blocks
+
+Allocations:
+   user1:    400 blocks
+   user2:    400 blocks
+   user3:   4772 blocks
+   user4:   2162 blocks
+   user5:    400 blocks
+
+Credits:
+   user1:          763
+   user2:           43
+   user3:          100
+   user4:          100
+   user5:          100
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 1000 blocks
+Total Demanded: 1550 blocks
+Resource Utilization: 100.00%
+Fairness Index: 0.393
+
+Resource: Memory
+Total Allocated: 4284 blocks
+Total Demanded: 6100 blocks
+Resource Utilization: 107.10%
+Fairness Index: 0.504
+
+Resource: Network
+Total Allocated: 1180 blocks
+Total Demanded: 3200 blocks
+Resource Utilization: 59.00%
+Fairness Index: 0.816
+
+Resource: Storage
+Total Allocated: 8134 blocks
+Total Demanded: 12200 blocks
+Resource Utilization: 101.68%
+Fairness Index: 0.474
+Credit Balance Index: 0.398
+Weighted Resource Utilization: 97.32%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Test Case 9: Public Resource Utilization
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    210 blocks
+   user2:    210 blocks
+   user3:    210 blocks
+   user4:    210 blocks
+   user5:    210 blocks
+
+Allocations:
+   user1:    210 blocks
+   user2:    160 blocks
+   user3:    160 blocks
+   user4:    165 blocks
+   user5:    162 blocks
+
+Resource: Memory
+Demands:
+   user1:    820 blocks
+   user2:    820 blocks
+   user3:    820 blocks
+   user4:    820 blocks
+   user5:    820 blocks
+
+Allocations:
+   user1:    820 blocks
+   user2:    720 blocks
+   user3:    720 blocks
+   user4:    738 blocks
+   user5:    732 blocks
+
+Resource: Network
+Demands:
+   user1:    415 blocks
+   user2:    415 blocks
+   user3:    415 blocks
+   user4:    415 blocks
+   user5:    415 blocks
+
+Allocations:
+   user1:    415 blocks
+   user2:    340 blocks
+   user3:    340 blocks
+   user4:    356 blocks
+   user5:    355 blocks
+
+Resource: Storage
+Demands:
+   user1:   1720 blocks
+   user2:   1720 blocks
+   user3:   1720 blocks
+   user4:   1720 blocks
+   user5:   1720 blocks
+
+Allocations:
+   user1:   1720 blocks
+   user2:   1520 blocks
+   user3:   1520 blocks
+   user4:   1532 blocks
+   user5:   1546 blocks
+
+Credits:
+   user1:          408
+   user2:          100
+   user3:          100
+   user4:          110
+   user5:          102
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 857 blocks
+Total Demanded: 1050 blocks
+Resource Utilization: 85.70%
+Fairness Index: 0.987
+
+Resource: Memory
+Total Allocated: 3730 blocks
+Total Demanded: 4100 blocks
+Resource Utilization: 93.25%
+Fairness Index: 0.997
+
+Resource: Network
+Total Allocated: 1806 blocks
+Total Demanded: 2075 blocks
+Resource Utilization: 90.30%
+Fairness Index: 0.994
+
+Resource: Storage
+Total Allocated: 7838 blocks
+Total Demanded: 8600 blocks
+Resource Utilization: 97.97%
+Fairness Index: 0.998
+Credit Balance Index: 0.644
+Weighted Resource Utilization: 94.87%
+
+Response Time: 0 ┬╡s
+----------------------------------------
+
+Test Case 10: Mixed Workload with Credit Recovery
+
+=== Current System State ===
+
+Resource: CPU
+Demands:
+   user1:    100 blocks
+   user2:    100 blocks
+   user3:    100 blocks
+   user4:    700 blocks
+   user5:    700 blocks
+
+Allocations:
+   user1:    100 blocks
+   user2:    100 blocks
+   user3:    100 blocks
+   user4:    160 blocks
+   user5:    160 blocks
+
+Resource: Memory
+Demands:
+   user1:    300 blocks
+   user2:    300 blocks
+   user3:    300 blocks
+   user4:   2800 blocks
+   user5:   2800 blocks
+
+Allocations:
+   user1:    300 blocks
+   user2:    300 blocks
+   user3:    300 blocks
+   user4:    720 blocks
+   user5:    720 blocks
+
+Resource: Network
+Demands:
+   user1:    150 blocks
+   user2:    150 blocks
+   user3:    150 blocks
+   user4:   1400 blocks
+   user5:   1400 blocks
+
+Allocations:
+   user1:    150 blocks
+   user2:    150 blocks
+   user3:    150 blocks
+   user4:    340 blocks
+   user5:    340 blocks
+
+Resource: Storage
+Demands:
+   user1:    600 blocks
+   user2:    600 blocks
+   user3:    600 blocks
+   user4:   5600 blocks
+   user5:   5600 blocks
+
+Allocations:
+   user1:    600 blocks
+   user2:    600 blocks
+   user3:    600 blocks
+   user4:   1520 blocks
+   user5:   1520 blocks
+
+Credits:
+   user1:          480
+   user2:          183
+   user3:          175
+   user4:          190
+   user5:          180
+
+Metrics per Resource:
+
+Resource: CPU
+Total Allocated: 620 blocks
+Total Demanded: 1700 blocks
+Resource Utilization: 62.00%
+Fairness Index: 0.947
+
+Resource: Memory
+Total Allocated: 2340 blocks
+Total Demanded: 6500 blocks
+Resource Utilization: 58.50%
+Fairness Index: 0.838
+
+Resource: Network
+Total Allocated: 1130 blocks
+Total Demanded: 3250 blocks
+Resource Utilization: 56.50%
+Fairness Index: 0.855
+
+Resource: Storage
+Total Allocated: 4840 blocks
+Total Demanded: 13000 blocks
+Resource Utilization: 60.50%
+Fairness Index: 0.822
+Credit Balance Index: 0.804
+Weighted Resource Utilization: 59.53%
+
+Response Time: 0 ┬╡s
+----------------------------------------

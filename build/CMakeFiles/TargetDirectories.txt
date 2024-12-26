@@ -1,0 +1,4 @@
+C:/Users/DELL/OneDrive/Desktop/Test_final_code/build/CMakeFiles/libkarma.dir
+C:/Users/DELL/OneDrive/Desktop/Test_final_code/build/CMakeFiles/example.dir
+C:/Users/DELL/OneDrive/Desktop/Test_final_code/build/CMakeFiles/edit_cache.dir
+C:/Users/DELL/OneDrive/Desktop/Test_final_code/build/CMakeFiles/rebuild_cache.dir

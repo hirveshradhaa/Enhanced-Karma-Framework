@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\DELL\OneDrive\Desktop\karma\karma\algorithm\src\karma_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\DELL\OneDrive\Desktop\karma\karma\algorithm\src\bheap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\DELL\OneDrive\Desktop\karma\karma\algorithm\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CA6E84CA-7DE7-39BC-AF10-2DE92A222238}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

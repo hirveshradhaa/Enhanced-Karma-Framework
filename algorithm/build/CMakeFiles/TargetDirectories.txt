@@ -1,0 +1,4 @@
+C:/Users/DELL/OneDrive/Desktop/karma/karma/algorithm/build/CMakeFiles/libkarma.dir
+C:/Users/DELL/OneDrive/Desktop/karma/karma/algorithm/build/CMakeFiles/example.dir
+C:/Users/DELL/OneDrive/Desktop/karma/karma/algorithm/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/DELL/OneDrive/Desktop/karma/karma/algorithm/build/CMakeFiles/ZERO_CHECK.dir
