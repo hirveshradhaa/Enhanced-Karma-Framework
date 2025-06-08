@@ -2,7 +2,6 @@
 
 This repository contains an implementation of the Karma algorithm as a C++ library for integration with applications requiring resource allocation. The library provides an allocator module with a simple and general interface that takes user demands as input and computes allocations using the Karma algorithm.
 
----
 
 ## Project Overview
 
@@ -14,7 +13,6 @@ The Enhanced Karma Framework aims to:
 
 This system is intended for research and practical use cases where fair and efficient allocation of resources (e.g., CPU, memory, bandwidth) is essential.
 
----
 
 ## Key Features
 
@@ -23,7 +21,6 @@ This system is intended for research and practical use cases where fair and effi
 - Batched allocation to efficiently compute user shares.
 - Modular design to integrate easily with other systems.
 
----
 
 ## Technologies Used
 
@@ -31,7 +28,6 @@ This system is intended for research and practical use cases where fair and effi
 - CMake — for cross-platform build and project management.
 - Visual Studio Code (optional) — for development and debugging.
 
----
 
 ## Getting Started
 
@@ -56,7 +52,6 @@ This system is intended for research and practical use cases where fair and effi
     make
     ```
 
----
 
 ## Usage
 
@@ -89,13 +84,12 @@ std::cout << "C: " << allocator.get_allocation("C") << std::endl;
 
 For a full example, refer to the `example/` directory in the project.
 
----
+
 
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any bug fixes, new features, or improvements.
 
----
 
 ## Additional Notes
 
@@ -103,4 +97,3 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 - Additional examples and test cases can be added in the `example/` folder.
 - Future improvements may include support for additional allocation algorithms and extended metrics.
 
----
